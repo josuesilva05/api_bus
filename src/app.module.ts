@@ -6,10 +6,18 @@ import { LinhasModule } from './linhas/linhas.module';
 import { PontosModule } from './pontos/pontos.module';
 import { MapaModule } from './mapa/mapa.module';
 import { VeiculosModule } from './veiculos/veiculos.module';
+import { ItnerariosModule } from './itinerarios/itnerarios.module';
 
 @Module({
   controllers: [AppController],
   providers: [AppService],
-  imports: [WebSocketModule, LinhasModule, PontosModule, MapaModule, VeiculosModule],
+  imports: [
+    ItnerariosModule,
+    LinhasModule,
+    MapaModule,
+    PontosModule,
+    VeiculosModule,
+    WebSocketModule
+  ],
 })
 export class AppModule {}

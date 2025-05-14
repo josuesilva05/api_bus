@@ -3,7 +3,7 @@ import { ApiOperation, ApiTags, ApiParam, ApiResponse } from '@nestjs/swagger';
 import { PontosService } from './pontos.service';
 import { map } from 'rxjs';
 
-@ApiTags('Pontos')
+@ApiTags('pontos')
 @Controller('api/pontos')
 export class PontosController {
     constructor(private readonly pontosService: PontosService) { }

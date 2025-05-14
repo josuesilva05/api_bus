@@ -2,7 +2,7 @@ import { Controller, Get, Param } from '@nestjs/common';
 import { LinhasService } from './linhas.service';
 import { ApiOperation, ApiParam, ApiResponse, ApiTags } from '@nestjs/swagger';
 
-@ApiTags('Linhas')
+@ApiTags('linhas')
 @Controller('api/linha')
 export class LinhasController {
   constructor(private readonly linhasService: LinhasService) {}

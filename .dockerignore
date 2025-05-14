@@ -1,0 +1,9 @@
+node_modules
+dist
+test
+.vscode
+*.txt
+*.py
+*.md
+Dockerfile
+docker-compose.yml
